@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .back{
+        width: 2000px;
+        height: 900px;
+        background-color: rgb(177, 98, 41);
+        position: fixed;
+        top: -100px;
+        left: -100px;
+    }
+    .back1{
+        width: 1000px;
+        height: 800px;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.493);
+        translate: -170px -1215px;
+        border-right: 10px dashed gray;
+        padding: 20px 20px 20px 20px;
+        color: white;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .back2{
+        width: 1000px;
+        height: 800px;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.493);
+        translate: 870px -2000px;
+        border-left: 10px dashed gray;
+        padding: 20px 20px 20px 20px;
+        color: white;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .box1{
+        width: 380px;
+        height: 500px;
+        background-color:rgba(255, 255, 0, 0.808);
+        border-top: 60px solid rgba(0, 0, 0, 0.849);
+        border-bottom: 60px solid rgba(0, 0, 0, 0.822);
+        border-left: 20px solid rgba(0, 0, 0, 0.829);
+        border-right: 20px solid rgba(0, 0, 0, 0.822);
+        transform: rotate(160deg);
+        translate: 500px 170px;
+    }
+    .box2{
+        width: 0px;
+        height: 0px;
+        border: 80px solid rgb(138, 12, 12);
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom: 135px solid rgb(138, 12, 12);
+        transform: rotate(40deg);
+        translate: 270px -50px;
+    }
+    .box3{
+        width: 380px;
+        height: 130px;
+        background-color: rgb(138, 12, 12);
+        translate: 0px 157px;
+    }
+    .box4{
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        translate: 270px 15px;
+    }
+    .box5{
+        width: 210px;
+        height: 350px;
+        background-color: rgba(0, 0, 0, 0.822);
+        translate: 10px -635px;
+        position: fixed;
+    }
+    .box6{
+        width: 270px;
+        height: 150px;
+        background-color: rgb(255, 255, 255);
+        translate: 90px 180px;
+    }
+    .box7{
+        width: 380px;
+        height: 500px;
+        background-color:yellowgreen;
+        border-top: 60px solid rgba(3, 3, 117, 0.9);
+        border-bottom: 60px solid rgba(3, 3, 117, 0.9);
+        border-left: 20px solid rgba(3, 3, 117, 0.9);
+        border-right: 20px solid rgba(3, 3, 117, 0.9);
+        transform: rotate(205deg) scale(0.9);
+        translate: 900px -400px;
+    }
+    .line1{
+        width: 200px;
+        height: 20px;
+        background-color: rgba(0, 0, 0, 0.822);
+        translate: 50px -10px;
+    }
+    .line2{
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        translate: 10px 10px;
+    }
+    .line3{
+        width: 60px;
+        height: 60px;
+        border-right: 10px solid rgb(143, 137, 137);
+        transform: rotate(45deg);
+        translate: 10px 10px;
+    }
+    .line4{
+        width: 60px;
+        border:10px solid white;
+        border-radius: 100%;
+        translate: 10px 10px;
+    }
+    .box1:hover{
+        transform: scale(1.1) rotate(160deg);
+    }
+    .box7:hover{
+        transform: scale(1) rotate(205deg);
+    }
+</style>
+<body>
+    <div class="back">
+        <div class="box1" onclick="big(b)">
+            <div class="box2"></div>
+            <div class="box3">
+                <div class="box4"></div>
+                <div class="line1"></div>
+                <div class="line1" style="translate: 150px -70px;width: 100px" ></div>
+                <div class="line1" style="translate: 100px -130px;width: 150px"></div>
+            </div>
+            <div class="line3" style="translate: 300px 135px;"></div>
+            <div class="line3" style="translate: 230px 75px;"></div>
+            <div class="line3" style="translate: 160px 15px;"></div>
+            <div class="line3" style="translate: 90px -45px;"></div>
+            <div class="line3" style="translate: 20px -105px;"></div>
+            <div class="box5">
+                    <div class="box6">
+                        <div class="line2" style="translate: 230px 110px"></div>
+                        <div class="line2" style="translate: 190px 80px"></div>
+                        <div class="line2" style="translate: 230px 10px"></div>
+                        <div class="line2" style="translate: 190px -20px"></div>
+                        <div class="line2" style="translate: 10px -110px"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="box7" onclick="big1(c)">
+                <div class="box2"></div>
+                <div class="box3" style="background-color:rgba(0, 255, 255, 0.884)">
+                    <div class="box4"></div>
+                    <div class="line1"></div>
+                    <div class="line1" style="translate: 150px -70px;width: 100px" ></div>
+                    <div class="line1" style="translate: 100px -130px;width: 150px"></div>
+                </div>
+                <div class="line3" style="translate: 300px 135px;"></div>
+                <div class="line3" style="translate: 230px 75px;"></div>
+                <div class="line3" style="translate: 160px 15px;"></div>
+                <div class="line3" style="translate: 90px -45px;"></div>
+                <div class="line3" style="translate: 20px -105px;"></div>
+                <div class="box5">
+                        <div class="box6">
+                            <div class="line2" style="translate: 230px 110px"></div>
+                            <div class="line2" style="translate: 190px 80px"></div>
+                            <div class="line2" style="translate: 230px 10px"></div>
+                            <div class="line2" style="translate: 190px -20px"></div>
+                            <div class="line2" style="translate: 10px -110px"></div>
+                        </div>
+                </div>
+            </div>
+            <div class="back1" id="1" onclick="big(b)">
+                <h1 style="translate: 120px 65px;text-align:center">基本信息</h1>
+                <div style="translate: 320px 80px; font-size: 30px;" >姓名：刘子翔 </div><hr>
+                <div style="translate: 620px 23px; font-size: 30px;" >年龄：20 </div>
+                <div style="translate: 320px 50px; font-size: 30px;" >国籍：中国 </div>
+                <div style="translate: 620px 15px; font-size: 30px;" >民族：汉 </div>
+                <div style="translate: 320px 40px; font-size: 30px;" >联系方式：17306007426 </div>
+                <div style="translate: 320px 60px; font-size: 30px;" >户籍：山东省日照市 </div>
+                <div style="translate: 650px 25px; font-size: 30px;" >居住地：福建省厦门市 </div>
+                <div style="translate: 320px 45px; font-size: 30px;" >院校：厦门理工学院 </div>
+                <div style="translate: 650px 10px; font-size: 30px;" >专业：计算机科学与技术 </div><hr style="translate:0px 20px">
+                <h1 style="translate: 120px 15px;text-align:center">自我评价</h1><hr>
+                <div style="translate: 280px 15px;font-size: 25px">1.有较强的学习能力，肯花时间学习新知识，应用能力强</div>
+                <div style="translate: 280px 15px;font-size: 25px">2.在生活中，性格诙谐幽默，与同学朋友关系友好</div>
+                <div style="translate: 280px 15px;font-size: 25px">3.时间观念强，做事不拖泥带水，做事效率高</div>
+                <div style="translate: 280px 15px;font-size: 25px">4.心态强大，抗压能力强，不会轻易受外界影响</div>
+                <div style="translate: 280px 15px;font-size: 25px">5.具有良好道德修养，遵纪守法，有上进心</div>
+            </div>
+            <div class="back2" id="2" onclick="big1(c)">
+                <h1 style="translate: -120px 10px;text-align:center">工作经验</h1><hr style="translate: 0px -10px">
+                <div style="translate: 70px 10px;font-size:25px">前面的区域以后再来探索吧</div><hr style="translate: 0px 120px">
+                <h1 style="translate: -120px 100px;text-align:center">专业技能</h1><hr style="translate: 0px 80px">
+                <div style="translate: 70px 100px;font-size:25px">会不熟练的使用HTML &nbsp;CSS &nbsp;JS</div>
+                <div style="translate: 70px 100px;font-size:25px">会Java但只会一点以及精的并不是很通的C/C++</div>
+                <div style="translate: 70px 100px;font-size:25px">专业课计算机组成原理，操作系统，数据结构，<br>
+                    离散数学，单片机，嵌入式</div>
+            </div>
+    </div>
+    <script>
+        var b=1,c=1;
+        function big(x){
+            if(x%2==1){
+                var a=document.getElementById("1");
+                a.style.visibility="visible";
+            }
+            if(x%2==0){
+                var a=document.getElementById("1");
+                a.style.visibility="hidden";
+            }
+            b++;
+        }
+        function big1(x){
+            if(x%2==1){
+                var a=document.getElementById("2");
+                a.style.visibility="visible";
+            }
+            if(x%2==0){
+                var a=document.getElementById("2");
+                a.style.visibility="hidden";
+            }
+            c++;
+        }
+        window.onkeydown=function(){
+            event.preventDefault();
+            if(event.keyCode==27){
+                open("./简历.html");
+            }
+        }
+    </script>
+</body>
+</html>

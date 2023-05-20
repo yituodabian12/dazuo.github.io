@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .back1{
+        width: 80px;
+        height:800px;
+        position: fixed;
+        background-color: rgb(63, 63, 60);
+    }
+    .back2{
+        width: 1550px;
+        height: 50px;
+        position: fixed;
+        background-color: rgb(63, 63, 60);
+    }
+    .back3{
+        width: 260px;
+        height: 800px;
+        background-color: pink;
+        translate: 80px 50px; 
+        position: fixed;
+    }
+    .box1{
+        width: 65px;
+        height: 150px;
+        border: 8px solid rgba(233, 219, 24, 0.932);
+        position: fixed;
+        top: 58px;
+        text-align: center;
+        color: rgba(233, 219, 24, 0.932);
+        font-size: 32px;
+    }
+    .box2{
+        width: 65px;
+        height: 132px;
+        border: 8px solid rgba(233, 219, 24, 0.932);
+        position: fixed;
+        top: 248px;
+        text-align: center;
+        color: rgba(233, 219, 24, 0.932);
+        font-size: 32px;
+        padding-top: 18PX;
+    }
+    .box3{
+        width: 65px;
+        height: 122px;
+        border: 8px solid rgba(233, 219, 24, 0.932);
+        position: fixed;
+        top: 438px;
+        text-align: center;
+        color: rgba(233, 219, 24, 0.932);
+        font-size: 32px;
+        padding-top: 28px;
+    }
+    .box4{
+        width: 260px;
+        height: 70px;
+    }
+    .box5{
+        width: 100px;
+        height: 40px;
+        border: 6px solid rgb(233, 219, 24,0.932);
+        position: fixed;
+        left: 1400px;
+        top: 7px;
+        color: rgba(233, 219, 24,0.932);
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    .back{
+        width: 2000px;
+        height: 800px;
+        position: fixed;
+        background-color: rgba(0, 255, 255, 0.699);
+
+    }
+    .box1:hover{
+        color: rgb(63, 63, 60);
+        background-color: rgb(233, 219, 24)
+    }
+    .box2:hover{
+        color: rgb(63, 63, 60);
+        background-color: rgb(233, 219, 24)
+    }
+    .box3:hover{
+        color: rgb(63, 63, 60);
+        background-color: rgb(233, 219, 24)
+    }
+    .box5:hover{
+        color: rgb(63, 63, 60);
+        background-color: rgb(233, 219, 24)
+    }
+    .box4:hover{
+        background-color: rgb(224, 149, 162);
+    }
+    .text1{
+        color: black;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 100px; 
+        letter-spacing: 3px;
+        line-height: 70px;
+        visibility: visible;
+        position: relative;
+    }
+    .text2{
+        color: black;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 100px; 
+        letter-spacing: 3px;
+        line-height: 70px;
+        visibility: hidden;
+        top: -590px;
+        position: relative;
+    }
+    .text3{
+        color: black;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 100px; 
+        letter-spacing: 3px;
+        line-height: 70px;
+        visibility: hidden;
+        top: -1110px;
+        position: relative;
+    }
+    .text4{
+        color: black;
+        font-size: 30px;
+        text-align: center;
+        padding: 100px 100px 100px 70px;
+        visibility: hidden;
+        position: relative;
+    }
+    .text5{
+        color: rgba(233, 219, 24,0.932);
+        font-size: 45px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="back" >
+        <span class="text4" id="p">
+            <h1 style="text-align:center">HTML
+                &nbsp;
+                p标签
+            </h1>
+            <p>HTML 段落是通过 p 标签进行定义的。</p>
+            <p>浏览器会自动地在段落的前后添加空行。</p>
+        </span>
+        <span class="text4" id="p" style="top: -310px">
+            <h1 style="text-align:center">HTML
+                &nbsp;
+                br标签
+            </h1>
+            <p>br 可插入一个简单的换行符。</p>
+            <p>请注意，br 标签只是简单地开始新的一行，而当浏览器遇到 p 标签时，<br>
+                通常会在相邻的段落之间插入一些垂直的间距。</p>
+        </span>
+        <span class="text4" id="p" style="top: -650px">
+            <h1 style="text-align:center">HTML
+                &nbsp;
+                h1标签
+            </h1>
+            <p>标题是通过 h1 - h6 等标签进行定义的。<br>
+                h1 定义最大的标题。h6 定义最小的标题。</p>
+            <p>浏览器会自动地在标题的前后添加空行。</p>
+        </span>
+        <span class="text4" id="p" style="top: -1000px">
+            <h1 style="text-align:center">HTML
+                &nbsp;
+                table标签
+            </h1>
+            <p>每个表格均有若干行,由 tr 标签定义，每行被分割为若干单元格,由 td 标签定义</p>
+            <p>数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等</p>
+        </span>
+        <span class="text4" id="p" style="top: -1310px">
+            <h1 style="text-align:center">HTML
+                &nbsp;
+                ul & ol标签
+            </h1>
+            <p>无序列表是一个项目的列表，此列项目使用粗体圆点,典型的小黑圆圈进行标记。<br>
+                无序列表始于 ul 标签。每个列表项始于 li。</p>
+            <p>同样，有序列表也是一列项目，列表项目使用数字进行标记。<br>
+               有序列表始于 ol 标签。每个列表项始于 li 标签。</p>
+        </span>
+        <span class="text4" id="p" style="top: -1700px">
+            <h1 style="text-align:center">HTML
+                &nbsp;
+                a标签
+            </h1>
+            <p>超链接可以是一个字，一个词，或者一组词，也可以是一幅图像，<br>
+                您可以点击这些内容来跳转到新的文档或者当前文档中的某个部分。</p>
+            <ul>有两种使用a标签的方式：
+                <li>通过使用 href 属性 - 创建指向另一个文档的链接</li>
+                <li>通过使用 name 属性 - 创建文档内的书签</li>
+            </ul>
+        </span>
+        <span class="text4" id="p"  style="top: -2100px">
+            <h1 style="text-align:center">CSS
+                &nbsp;
+                animation
+            </h1>
+            <p>内含六个属性：<br>
+                animation-name：代表要使用的动画名 <br>
+                animation-duration：动画播放一边所需时间 <br>
+                animation-timing-function：动画的播放速度函数 <br>
+                animation-delay：延时多久后开始播放 <br>
+                animation-iteration-count：动画播放次数 <br>
+                animation-direction：动画正放还是倒放，或穿插播放 </p>
+            <ul>用keyframes来制作动画，内部可以用两种方法来定义中间状态 
+                <li>from to来定义动画初始状态和最终状态,但是只有两个中间状态</li>  
+                <li>用百分比来定义动画中间状态，可以有多个状态</li>
+            </ul>
+        </span>
+        <span class="text4" id="p" style="top: -2700px">
+            <h1 style="text-align:center">CSS
+                &nbsp;
+                background
+            </h1>
+            <p>内含六个属性<br>
+               background-color：背景颜色 <br>
+               background-position：背景位置 <br>
+               background-size：背景大小 <br>
+               background-repeat：是否重复平铺 <br>
+               background-attachment：背景相对于屏幕位置是否固定 <br>
+               background-image：背景图片，用src加图片路径</p>
+            <p>当背景颜色与背景图片同时设置时，背景颜色会被覆盖<br>
+                可以同时设置多个背景图片，定义时用逗号分隔不同图片的属性</p>
+        </span>
+        <span class="text4" id="p" style="top: -3250px">
+                <h1 style="text-align:center">CSS
+                    &nbsp;
+                    border
+                </h1>
+                <p>内含四个属性<br>
+                   border-color：边框颜色 <br>
+                   border-style：边框样式 <br>
+                   border-width：边框宽度 <br>
+                   border-radius：边框弧度</p>
+                <p>利用边框弧度可以做圆，椭圆等，而利用小区块与大边框可以做三角形与梯形</p>
+            </span>
+        <span class="text4" id="p" style="top: -3700px">
+                <h1 style="text-align:center">CSS
+                    &nbsp;
+                    font
+                </h1>
+                <p>内含四个属性<br>
+                   font-size：字体大小 <br>
+                   color：字体颜色 <br>
+                   line-height：行与行之间的高度 <br>
+                   font-style：字体样式</p>
+                <p>当背景颜色与背景图片同时设置时，背景颜色会被覆盖<br>
+                    可以同时设置多个背景图片，定义时用逗号分隔不同图片的属性</p>
+            </span>
+            <span class="text4" id="p" style="top: -4180px">
+                <h1 style="text-align:center">CSS
+                    &nbsp;
+                    transform
+                </h1>
+                <p>内含四个属性<br>
+                   translate：左右上下平移 <br>
+                   rotate：旋转 <br>
+                   scale：缩放 </p>
+                <p>可以通过旋转与平移边框来组成一些倾斜图形</p>
+            </span>
+            <span class="text4" id="p" style="top: -4600px">
+                <h1 style="text-align:center">JS
+                    &nbsp;
+                    function
+                </h1>
+                <p>getElementById：通过ID获取元素<br>
+                    getElementsByClassName：通过类名获取元素 <br>
+                   用一个var类型的变量储存获取到的元素 <br>
+                   改变获取到元素的属性：变量名.style.CSS属性 </p>
+            </span>
+            <span class="text4" id="p" style="top: -4950px">
+                <h1 style="text-align:center">JS
+                    &nbsp;
+                    onclick
+                </h1>
+                <p>以下两种方法可以通过onclick定义点击事件<br>
+                    在HTML标签里加上onclick="要执行的代码" <br>
+                     元素.onclick=点击事件函数 </p>
+            </span>
+    </div>
+    <div class="back1">
+        <div class="box1" onclick="changetext1()">
+            <div>H</div>
+            <div>T</div>
+            <div>M</div>
+            <div>L</div>
+        </div>
+        <div class="box2" onclick="changetext2()">
+            <div>C</div>
+            <div>S</div>
+            <div>S</div>
+        </div>
+        <div class="box3" onclick="changetext3()">
+            <div>J</div>
+            <div style="font-size:16px">&nbsp;</div>
+            <DIV>S</DIV>
+        </div>
+    </div>
+    <div class="back2">
+        <div class="text5">学习总结</div>
+        <div class="box5" onclick="help()">help</div>
+    </div>
+    <div class="back3">
+        <div class="text1" id="text1">
+            <div class="box4" onclick="changecontent(0)">p</div>
+            <div class="box4" onclick="changecontent(1)">br</div>
+            <div class="box4" onclick="changecontent(2)">h1</div>
+            <div class="box4" onclick="changecontent(3)">table</div>
+            <div class="box4" onclick="changecontent(4)">ul & ol</div>
+            <div class="box4" onclick="changecontent(5)">a</div>
+        </div>
+        <div class="text2" id="text2" >
+            <div class="box4" onclick="changecontent(6)">animation</div>
+            <div class="box4" onclick="changecontent(7)">background</div>
+            <div class="box4" onclick="changecontent(8)">border</div>
+            <div class="box4" onclick="changecontent(9)">font</div>
+            <div class="box4" onclick="changecontent(10)">transform</div>
+        </div>
+        <div class="text3" id="text3">
+            <div class="box4"  onclick="changecontent(11)">function</div>
+            <div class="box4"  onclick="changecontent(12)">onclick</div>
+        </div>
+    </div>
+    <script tq></script>
+    <script>
+        function changetext1(){
+            var p = document.getElementById("text1");
+            var q = document.getElementById("text2");
+            var r = document.getElementById("text3");
+            p.style.visibility="visible";
+            q.style.visibility="hidden";
+            r.style.visibility="hidden";
+        }
+        function changetext2(){
+            var p = document.getElementById("text1");
+            var q = document.getElementById("text2");
+            var r = document.getElementById("text3");
+            p.style.visibility="hidden";
+            q.style.visibility="visible";
+            r.style.visibility="hidden";
+        }
+        function changetext3(){
+            var p = document.getElementById("text1");
+            var q = document.getElementById("text2");
+            var r = document.getElementById("text3");
+            p.style.visibility="hidden";
+            q.style.visibility="hidden";
+            r.style.visibility="visible";
+        }
+        function changecontent(a){
+            b=a;
+            var p = document.getElementsByClassName("text4");
+            for(var i=0;i<p.length;i++){
+                if(i==a){
+                    p[i].style.visibility="visible";
+                }
+                else{
+                    p[i].style.visibility="hidden";
+                }
+            }
+        }
+
+        window.onkeydown=function(){
+            event.preventDefault();
+            if(event.keyCode==27){
+                open("./简历.html");
+            }
+            if(event.keyCode==37){
+                changecontent(b-1);
+            }
+            if(event.keyCode==39){
+                changecontent(b+1);
+            }
+        }
+        function help(){
+            alert("本页面为对该网站构建过程中使用到的知识点汇总\n以下提供两种方法浏览知识点：\n1.最左侧可以切换HTML CSS JS，中间可以选择具体知识点\n2.按左右方向键可以切换，按ESC回到起始页面");
+        }
+    </script>
+</body>
+</html>
